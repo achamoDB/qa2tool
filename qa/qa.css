@@ -1,0 +1,231 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+body, div, span, button {
+	font-family: "Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif;
+}
+a:link, a:visited {
+    text-decoration: none;
+	color: blue;
+}
+a:hover, a:active {
+    text-decoration: underline;
+	color: blue;
+}
+.page {
+	display: none;
+}
+.page[data-visible] {
+	display: inline;
+}
+#main {
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#header {
+	background-color: #f8f8f8;
+	height: 45px;
+	padding: 0px 10px;
+	display: flex;
+	align-items: center;
+}
+#header .title {
+	font-size: 18px;
+}
+#header.welcome {
+	justify-content: flex-end; /* align horizontal */
+	background-color: #ffffff;
+	font-size: 13px;
+}
+#welcomeContainer {
+	background-color: rgb(44, 122, 191);
+	color: white;
+	padding: 20px 80px;
+}
+#welcomeContainer .title {
+	font-size: 36px;
+	font-weight: 500;	
+	padding: 10px;
+}
+#welcomeContainer .subtitle {
+	font-size: 24px;
+	font-weight: 400;
+	padding: 10px;
+	max-width: 60%;
+}
+#welcomeContainer .logo {
+	float: right;
+}
+#loginContainer {
+	background-color: #cccccc;
+	color: black;
+	padding: 20px 80px;
+	text-align: center;
+}
+.login {
+	background-color: white;
+	border: 1px solid #cfeace;
+	width: 300px; 
+	display: inline-block;
+	text-align: center;
+	padding: 20px 20px;
+}
+.login .label {
+	text-align: left;
+	padding-top: 20px;
+	padding-bottom: 2px;
+	color: rgb(44, 122, 191);
+}
+.login input {
+	width: 100%;
+	background-color: #e3e4e5;
+	border: 1px solid #aaaaaa;
+	font-size: 16px;
+	font-family: cursive;
+	height: 30px;
+	padding: 1px 5px;
+}
+.login .action {
+	padding-top: 45px;
+	padding-bottom: 20px;
+}
+.login button {
+	width: 100%;
+	background-color: #398FDF;
+	border: 1px solid #888888;
+	font-size: 16px;
+	height: 36px;
+	color: white;
+	font-weight: bold;
+}
+.login .smalltext {
+	font-size: 12px;
+}
+.info .column {
+	width: 25%;
+	text-align: justify;
+	float: left;
+	padding: 20px;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+.info .column .title {
+	font-size: 16px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+#body {
+	background-color: #e0e0e0;
+	flex-grow: 1;
+	flex-basis: auto;
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;	
+}
+#mainbody {
+	flex-grow: 1;
+	flex-basis: auto;
+	display: flex;
+	flex-direction: column;
+}
+#rightbody {
+	width: 200px;
+	background-color: #f0f0f0;
+	border-left: 1px solid #e0e0e0;		
+	display: flex;
+	flex-direction: column;
+}
+#menu {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+}
+.option {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 30px;
+	font-size: 14px;
+	border: 1px solid #ffffff;
+}
+.option:hover {
+	background-color: #f8f8f8;
+	border: 1px solid #e0e0e0;
+}
+.option .image {
+	width: 50px;
+	height: 50px;
+	background-color: #d7e2a1;
+	margin: 20px;
+	border-radius: 100%;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-weight: bold;
+}
+.option .item {
+	margin-bottom: 20px;
+	text-align: center;
+}
+#content {
+	background-color: #ffffff;
+	flex-grow: 1;
+	flex-basis: auto;
+	display: flex;
+	flex-direction: column;
+}
+#panels {
+	flex-grow: 1;
+	flex-basis: auto;
+	display: flex;
+	flex-direction: row;
+}
+.panel {
+	flex-grow: 1;
+	border-left: 1px solid #e0e0e0;
+}
+.panel .title {
+	font-size: 14px;
+	background-color: #fafafa;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;	
+	padding-left: 10px;
+	height: 40px;	
+	display: flex;
+	flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.path {
+	font-size: 12px;
+	padding: 5px;	
+}
+#rightbody .text {
+	padding: 10px;
+	font-size: 12px;
+	text-align: justify;
+}
+#rightbody .title {
+	font-size: 14px;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;	
+	padding-left: 10px;
+	height: 40px;	
+	display: flex;
+	flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+	box-sizing: border-box;	
+}
+#footer {
+	background-color: #f8f8f8;
+	height: 40px;	
+}

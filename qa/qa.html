@@ -1,0 +1,154 @@
+<!doctype html>
+
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link href="qa.css" rel="stylesheet" type="text/css">
+<script src="qa.js" type="text/javascript"></script>
+
+<div id="main">
+</div>
+
+<!--<button onclick="doit();">Click</button>-->
+
+<!----------------------------------------------------------------------->
+<div class="page" id="page1">
+	<div id="header" class="welcome">
+		<a href="#">Registrese</a>&nbsp;&nbsp;
+		<a href="#" onclick="page(2, '#main');">Ingrese</a>&nbsp;&nbsp;
+	</div>
+	<div id="welcomeContainer">
+		<div class="logo">
+			<img src="toolbox.png" width="180px">
+		</div>
+		<div class="title">
+			QA Automation Tool
+		</div>
+		<div class="subtitle">
+			Genere, administre y automatice sus casos de prueba usando solo su navegador y sin necesidad de programación.
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+</div>
+<!----------------------------------------------------------------------->
+<div class="page" id="page2">
+	<div id="header">
+		<div class="title">
+			QA Automation Tool
+		</div>
+	</div>
+	<div id="loginContainer">
+		<div class="login">
+				<div class="label">Empresa</div>
+				<div class="data"><input type="text"></div>
+				<div class="label">Usuario</div>
+				<div class="data"><input type="text"></div>
+				<div class="label">Contraseña</div>
+				<div class="data"><input type="password"></div>
+				<div class="action"><button onclick="page(3, '#main')">Ingresar</button></div>
+				<br>
+				<div class="smalltext"><a href="#">¿Cuál es mi empresa?</a></div>
+				<div class="smalltext"><a href="#">Olvidé mi usuario</a></div>
+				<div class="smalltext"><a href="#">Olvidé mi contraseña</a></div>
+				<br>
+				<div class="smalltext"><a href="#">Registrarse</a></div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+	<div class="info">
+		<div class="column">
+			<div class="title">Introducción</div>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.<br><br> Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br> Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="column">
+			<div class="title">Recursos</div>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.<br><br> Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="column">
+			<div class="title">Preguntas Frecuentes</div>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br> Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>	
+		<div class="column">
+			<div class="title">Foros de Discusión</div>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.<br><br> Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+</div>
+<!----------------------------------------------------------------------->
+<div class="page" id="page3">
+	<div id="header">
+		<div class="title">
+			QA Automation Tool
+		</div>
+	</div>
+	<div id="body">
+		<div id="mainbody">
+			<div id="menu">
+				<div class="option" onclick="page(4, '#mainbody')">
+					<div class="image" style="background-color: #880000;">I</div>
+					<div class="item">Inventario<br>de casos</div>
+				</div>
+				<div class="option">
+					<div class="image" style="background-color: #008800;">PE</div>
+					<div class="item">Planes de <br>ejecución</div>
+				</div>
+				<div class="option">
+					<div class="image" style="background-color: #000088;">HE</div>
+					<div class="item">Historial de<br>ejecuciones</div>
+				</div>
+				<div class="option">
+					<div class="image" style="background-color: #880088;">C</div>
+					<div class="item">Configuración y<br>Administración</div>				
+				</div>				
+			</div>
+			<div id="content">
+				<div id="panels">
+					<div class="panel">
+						<div class="title">Ultimas actualizaciones</div>
+					</div>
+					<div class="panel">
+						<div class="title">Ejecuciones recientes</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="rightbody">
+			<div>
+				<div class="title">Acerca de la herramienta</div>
+				<div class="text">QA Automation Tool permite administrar todo el ciclo de desarrollo de los casos de prueba de un proyecto a través de una sola herramienta</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+</div>
+<!----------------------------------------------------------------------->
+<div class="page" id="page4">
+	<div class="path">Principal / <b>Inventario de Casos</b> &gt;</div>
+	<div id="menu">
+		<div class="option">
+			<div class="image" style="background-color: #aa2222;">I</div>
+			<div class="item">Crear un elemento</div>
+		</div>
+		<div class="option">
+			<div class="image" style="background-color: #aa2222;">PE</div>
+			<div class="item">Editar un elemento</div>
+		</div>
+		<div class="option">
+			<div class="image" style="background-color: #aa2222;">HE</div>
+			<div class="item">Eliminar un elemento</div>
+		</div>
+		<div class="option">
+			<div class="image" style="background-color: #aa2222;">C</div>
+			<div class="item">Buscar un elemento</div>				
+		</div>				
+	</div>
+	<div id="content">
+		<div id="panels">
+			<div class="panel">
+				<div class="title">Inventario general</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!----------------------------------------------------------------------->
+
+<script>page(1, "#main");</script>

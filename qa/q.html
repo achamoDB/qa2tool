@@ -1,0 +1,148 @@
+<style>
+
+body {
+	margin: 0;
+	padding: 0;
+}
+body, div, span, button {
+	font-family: "Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif;
+}
+#main {
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#header {
+	background-color: #f8f8f8;
+	height: 45px;
+	padding: 0px 10px;
+	display: flex;
+	align-items: center;
+}
+#header .title {
+	font-size: 18px;
+}
+#body {
+	background-color: #e0e0e0;
+	flex-grow: 1;
+	flex-basis: auto;
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;	
+}
+#mainbody {
+	flex-grow: 1;
+	flex-basis: auto;
+	display: flex;
+	flex-direction: column;
+}
+#rightbody {
+	width: 200px;
+	background-color: #f0f0f0;
+	border-left: 1px solid #e0e0e0;		
+	display: flex;
+	flex-direction: column;
+}
+#menu {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+}
+.option {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/*padding: 30px; */
+	margin: 30px;
+	font-size: 14px;
+}
+.option:hover {
+	background-color: #f8f8f8;
+	border: 1px solid #e0e0e0;
+}
+.option .image {
+	width: 50px;
+	height: 50px;
+	background-color: #e8e8e8;
+	margin: 20px;
+	border-radius: 100%;
+	border: 2px solid green;
+}
+.option .item {
+	margin-bottom: 20px;
+}
+#content {
+	background-color: #ffffff;
+	flex-grow: 1;
+	flex-basis: auto;
+	display: flex;
+	flex-direction: column;
+}
+#panels {
+	flex-grow: 1;
+	flex-basis: auto;
+	display: flex;
+	flex-direction: row;
+}
+.panel {
+	flex-grow: 1;
+	border-left: 1px solid #e0e0e0;
+}
+.panel .title {
+	font-size: 14px;
+	background-color: #f8f8f8;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;	
+	padding-left: 10px;
+	height: 40px;	
+	display: flex;
+	flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#footer {
+	background-color: #f8f8f8;
+	height: 40px;	
+}
+</style>
+
+<div id="main">
+	<div id="header">
+		<div class="title">
+			QA Automation Tool
+		</div>
+	</div>
+	<div id="body">
+		<div id="mainbody">
+			<div id="menu">
+				<div class="option">
+					<div class="image"></div>
+					<div class="item">Opcion 1</div>
+				</div>
+				<div class="option">
+					<div class="image"></div>
+					<div class="item">Opcion 2</div>
+				</div>
+				<div class="option">
+					<div class="image"></div>
+					<div class="item">Opcion 3</div>				
+				</div>				
+			</div>
+			<div id="content">
+				<div id="panels">
+					<div class="panel">
+						<div class="title">Ultimas actualizaciones</div>
+					</div>
+					<div class="panel">
+						<div class="title">Ejecuciones recientes</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="rightbody"></div>
+	</div>
+	<div id="footer"></div>
+</div>
