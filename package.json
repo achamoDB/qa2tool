@@ -1,0 +1,8 @@
+{
+  "name": "qa2tool",
+  "version": "0.0.1",
+
+  "engines": {
+    "node": "5.9.1"
+  }
+}
