@@ -1,4 +1,4 @@
-const root = "C:\\Temp\\sandbox\\qa"
+const root = ".\\qa";
 
 var my_http = require("http"),
 	path = require("path"),
