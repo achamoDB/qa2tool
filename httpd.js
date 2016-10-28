@@ -37,12 +37,14 @@ function call_service(my_path, response) {
 	console.log("service: " + my_path);
 }
 
+var port = process.env.PORT || 5000;
+
 my_http.createServer(function(request,response){
 	var my_path = url.parse(request.url).pathname;
 	if (my_path.match(/^\/services\//))
 		call_service(my_path,response);
 	else
 		load_file(my_path,response);
-}).listen(5000);
+}).listen(port);
 
-console.log("Server Running on 5000");     
+console.log("Server Running on " + port);     
