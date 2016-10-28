@@ -1,4 +1,4 @@
-const root = ".\\qa";
+const root = "./qa";
 
 var my_http = require("http"),
 	path = require("path"),
